@@ -1,0 +1,37 @@
+[
+    {
+        "questions":"who is the best player",
+        "answer":"messi",
+        "option":[
+            "messi",
+            "mbappe",
+            "ronaldo",
+            "neymar"
+        ],
+        "id": 1
+        
+    },
+    {
+         "questions":"who is the highest goal scorer",
+    "answer":"ronaldo",
+    "option":[
+        "messi",
+        "mbappe",
+        "ronaldo",
+        "neymar"
+    ],
+    "id": 2
+        
+    },
+    {
+        "questions":"who is the most skiled player",
+        "answer":"neymar",
+        "option":[
+            "messi",
+            "mbappe",
+            "ronaldo",
+            "neymar"
+        ],
+        "id": 3
+    }
+]

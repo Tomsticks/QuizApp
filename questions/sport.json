@@ -1,0 +1,24 @@
+[
+    {
+        "question": "who is the greatest player?",
+        "answer": "none of the above",
+        "options": [
+            "messi",
+            "ronaldo",
+            "kaka",
+            "none of the above"
+        ],
+        "id": 1
+    },
+    {
+        "question": "who highest goalscorer",
+        "answer": "ronaldo",
+        "options": [
+            "messi",
+            "ronaldo",
+            "kaka",
+            "none of the above"
+        ],
+        "id": 2
+    }
+]

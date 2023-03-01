@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quiz</title>
+  <link rel="stylesheet" href="./quiz.css">
+  <script>
+    let token = localStorage.getItem('token')
+    if (token === null) {
+      window.location.replace('./login.html')
+    }
+  </script>
+  <style>
+    .hidden {
+      display: none
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="container">
+
+    <div class="logo">
+      <a href="./index.html">QuizLogo</a>
+    </div>
+    <ul>
+      <li><a href="./quiz.html">Quiz</a></li>
+      <li><a href="./register.html">Register</a></li>
+      <li><a href="./login.html">Login</a></li>
+      <li><a href="#" class="logout">logout</a></li>
+
+    </ul>
+  </nav>
+  <div class="container">
+    <h1 class="topic"></h1>
+  </div>
+
+  <div class="questionContainer">
+  </div>
+  <button class="next">next</button>
+  <button class="submit hidden">submit</button>
+  <script src="../scripts/question.js"></script>
+</body>
+
+</html>

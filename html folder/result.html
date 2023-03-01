@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR RESULT</title>
+    <link rel="stylesheet" href="../style folder/result.css">
+    <script>
+             let token = localStorage.getItem('token')
+    if (token === null){
+    window.location.replace('../index.html')
+    }
+
+    
+    </script>
+</head>
+<body>
+    <div class="contain">
+        <p class="excellent">EXCELLENT</p>
+        <div class="biggie">
+            <span class="score"></span>
+        </div>
+        <p class="wrong-picked">KEEP IT UP, YOU ARE AMAZING</p>
+        <button>home</button>
+    </div>
+
+</body>
+<script>
+    let homeBtn = document.querySelector('button')
+    homeBtn.addEventListener('click', ()=>{
+        location.replace('../html folder/dashboard.html')
+    })
+    const results = JSON.parse(localStorage.getItem('result'))
+    document.querySelector('.score').textContent = `${results.score}%`
+    if(results.score <= 80){
+        document.querySelector('.excellent').textContent = 'VERY GOOD'
+        document.querySelector('.wrong-picked').textContent = 'KEEP IT UP, YOU ARE AMAZING'
+    }
+    else if(results.score <= 60){
+        document.querySelector('.excellent').textContent = 'GOOD'
+        document.querySelector('.wrong-picked').textContent = 'KEEP IT UP, YOU CAN DO MORE'
+    }
+    
+</script>
+</html>

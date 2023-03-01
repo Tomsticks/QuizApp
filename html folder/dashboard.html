@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz dashboard</title>
+    <link rel="stylesheet" href="../style folder/dashboard.css">
+    <script>
+        let token = localStorage.getItem('token')
+    if (token === null){
+    window.location.replace('../index.html')
+    }
+    </script>
+</head>
+<body>
+    <div class="left">
+        <div class="user-info">
+            <div class="user-details" id="user-details">
+                <img class="img-dashboard" src="../img/1000_F_517798849_WuXhHTpg2djTbfNf0FQAjzFEoluHpnct (1).jpg" alt="">
+               <div>
+                <p class="top">OLOWE PETER TEMILOLUWA</p>
+                <p class="bottom">Dashboard</p>
+               </div>
+            </div>
+            <p class="parameters profile" id="profile">profile</p>
+            <p class="parameters test" id="test">Take a Test</p>
+            <!-- <p class="parameters performance">performance</p>
+            <p class="parameters history">history</p> -->
+            <p class="parameters logout" id="logout">logout</p>
+        </div>
+
+
+        <p class="setting">SETTING</p>
+    </div>
+    <div class="right">
+        <!-- <h2>PLEASE SELECT THE APPROPRIATE AREA BEFORE PROCEEDING</h2>
+        <p class="select">select mode</p>
+        <div class="mode">
+            <div>
+                <input type="radio" name="easy" id="easy">
+            <label for="easy">easy</label>
+            </div>
+            <div>
+                <input type="radio" name="easy" id="normal">
+            <label for="normal">normal</label>
+            </div>
+            <div>
+                <input type="radio" name="easy" id="hard">
+            <label for="hard">hard</label>
+            </div>
+        </div>
+        <p class="select">select subject</p>
+        <div class="subject">
+            <select name="subjects" id="subject">
+                <option value="0" required readonly disabled selected hidden>select subject</option>
+                <option value="1">Physics</option>
+                <option value="2">Biology</option>
+                <option value="3">Chemistry</option>
+                <option value="4">Mathematics</option>
+                <option value="5">English</option>
+            </select>
+        </div>
+        <p class="select">select time</p>
+        <div class="subject">
+            <select name="time" id="time">
+                <option value="0" required readonly disabled selected hidden>select time</option>
+                <option value="1">10 minutes</option>
+                <option value="2">15 minutes</option>
+                <option value="3">20 minutes</option>
+                <option value="4">25 minutes</option>
+                <option value="5">30 minutes</option>
+            </select>
+        </div>
+        <button>start</button>
+    </div><h2>PLEASE SELECT THE APPROPRIATE AREA BEFORE PROCEEDING</h2>
+        <p class="select">select mode</p>
+        <div class="mode">
+            <div>
+                <input type="radio" name="easy" id="easy">
+            <label for="easy">easy</label>
+            </div>
+            <div>
+                <input type="radio" name="easy" id="normal">
+            <label for="normal">normal</label>
+            </div>
+            <div>
+                <input type="radio" name="easy" id="hard">
+            <label for="hard">hard</label>
+            </div>
+        </div>
+        <p class="select">select subject</p>
+        <div class="subject">
+            <select name="subjects" id="subject">
+                <option value="0" required readonly disabled selected hidden>select subject</option>
+                <option value="1">Physics</option>
+                <option value="2">Biology</option>
+                <option value="3">Chemistry</option>
+                <option value="4">Mathematics</option>
+                <option value="5">English</option>
+            </select>
+        </div>
+        <p class="select">select time</p>
+        <div class="subject">
+            <select name="time" id="time">
+                <option value="0" required readonly disabled selected hidden>select time</option>
+                <option value="1">10 minutes</option>
+                <option value="2">15 minutes</option>
+                <option value="3">20 minutes</option>
+                <option value="4">25 minutes</option>
+                <option value="5">30 minutes</option>
+            </select>
+        </div>
+        <button>start</button> -->
+
+        
+
+        <div class="user-image">
+            <img class="round" src="../img/1000_F_517798849_WuXhHTpg2djTbfNf0FQAjzFEoluHpnct (1).jpg" alt="">
+            <div class="user-name">
+                <p class="naming"></p>
+                <p class="naming-info" >current user</p>
+            </div>
+        </div>
+
+
+        <!-- <div class="display-preview">
+            <div class="preview">
+                <p class="wordings">PERFORMANCE</p>
+                <p class="sub-wording">last test grade: <span></span></p>
+            </div>
+            <div class="preview">
+                <p class="wordings">HISTORY</p>
+                <p class="sub-wording">last score: <span>%</span></p>
+            </div>
+            <div class="preview">
+                <p class="wordings">PROFILE UPDATE</p>
+                <p class="sub-wording">last update: <span></span></p>
+            </div>
+        </div> -->
+
+
+
+        <div class="cards-section">
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+            <div class="advert">
+                <p class="text">online learn</p>
+            </div>
+        </div>
+
+
+
+        <footer>
+            <p>&copy;2023 All Right Reserve. Powered by temmie-smiles</p>
+        </footer>
+    </div>
+</body>
+<script src="../script/utility.js"></script>
+<script src="../script/dashboard.js"></script>
+</html>

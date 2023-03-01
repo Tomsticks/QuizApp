@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+
+body{
+    background-color: rgb(2, 87, 2);
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    height: 100vh;
+    border-bottom-right-radius: 90% ;
+    border-top-right-radius: 20%;
+}
+
+.brainstorm{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: green;  
+    font-weight: bolder
+
+}
+
+.exist{
+    letter-spacing: 12px;
+    font-weight: bolder
+}
+
+img{
+    border-radius: 100%;
+    border-bottom: 2px solid green;
+    height: 90mm;
+    width: 90mm;
+}
+
+.attributes{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+h1{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    width: 90%;
+}
+
+.get-started{
+    color: green;
+    text-decoration: none;
+    background-color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 15px;
+    border-radius: 30px;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.get-started:hover{
+    transition: 0.5s ease-in-out;
+    background: gold;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz profile</title>
+    <link rel="stylesheet" href="../style folder/profile.css">
+    <script>
+             let token = localStorage.getItem('token')
+    if (token === null){
+    window.location.replace('../index.html')
+    }
+    </script>
+</head>
+
+<body>
+    <div class="left">
+        <div class="user-info">
+            <div class="user-details">
+                <img class="img-dashboard" src="../img/1000_F_517798849_WuXhHTpg2djTbfNf0FQAjzFEoluHpnct (1).jpg" alt="">
+               <div>
+                <p class="top">OLOWE PETER TEMILOLUWA</p>
+                <p class="bottom">Dashboard</p>
+               </div>
+            </div>
+            <p class="parameters profile">profile</p>
+            <p class="parameters test">Take a Test</p>
+            <!-- <p class="parameters performance">performance</p>
+            <p class="parameters history">history</p> -->
+            <p class="parameters logout" id="logout">logout</p>
+        </div>
+
+
+        <p class="setting">SETTING</p>
+    </div>
+    <div class="right">
+        <div class="show-profile">
+
+            <div class="profile-image">
+                <img class="image-design" src="../img/1000_F_517798849_WuXhHTpg2djTbfNf0FQAjzFEoluHpnct (1).jpg" alt="">
+                <p class="user-profile">PROFILE PICS</p>
+            </div>
+
+
+            <div class="prop">
+                <div class="arrange">
+                    <h4>FULLNAME:</h4>
+                    <p class="profiles fullname"  id="">TEMILOLUWA</p>
+                </div>
+                <div class="arrange">
+                    <h4>E-MAILL:</h4>
+                    <p class="profiles email" id="">TEMILOLUWA</p>
+                </div>
+                <div class="arrange">
+                    <h4>DATE OF BIRTH:</h4>
+                    <p class="profiles dateofbirth" id="">TEMILOLUWA</p>
+                </div>
+                <div class="arrange">
+                    <h4>GENDER:</h4>
+                    <p class="profiles gender" id="">TEMILOLUWA</p>
+                </div>
+                <div class="arrange">
+                    <h4>PHONE NUMBER:</h4>
+                    <p class="profiles phonenumber" id="">TEMILOLUWA</p>
+                </div>
+            </div>
+
+            <p class="edit-btn">Edit</p>
+
+        </div>
+    </div>
+
+
+    <div class="overlay"></div>
+
+
+    <form class="input-form">
+        <label for="imageChange" class="image-profile">
+            <img class="preview">
+            <input type="file" name="imageChange" id="imageChange" class="imageChange " hidden>
+        </label>
+        <div class="input-wrap-up">
+            <div class="input1">
+                <label for="fullname">FULLNAME:</label>
+                <input type="text" class="fullname" id="fullname" name="fullname" >
+            </div>
+            
+            <div class="input3">
+                <label for="dateofbirth">DATE OF BIRTH:</label>
+                <input type="date" class="dateofbirth" id="dateofbirth" name="dateofbirth">
+            </div>
+            <div class="input4">
+                <label for="phonenumber">PHONE NUMBER:</label>
+                <input type="number" class="phonenumber" id="phonenumber" name="phonenumber">
+            </div>
+            <div class="selctedoption">
+             <label for="gender">GENDER:</label>
+             <select class="gender" id="gender" name="gender">
+                 <option value="" readonly selected required disabled hidden>gender</option>
+                 <option value="Male">male</option>
+                 <option value="Female">female</option>
+             </select>
+            </div>
+        </div>
+
+        <button class="update">UPDATE</button>
+    </form>
+
+</body>
+<script src="../script/utility.js"></script>
+<script src="../script/profile.js"></script>
+<script>
+    const names = document.querySelector('.top')
+const showMyImage = document.querySelector('.img-dashboard')
+
+
+
+
+
+function init() {
+    let user =  JSON.parse(localStorage.getItem('currentUser'));
+    console.log(user);
+    let showSecondImage = document.querySelector('.image-design')
+    names.textContent = user.username
+    showMyImage.src = user.profileImage || "../img/1000_F_517798849_WuXhHTpg2djTbfNf0FQAjzFEoluHpnct (1).jpg"
+    showSecondImage.src = user.profileImage || "../img/1000_F_517798849_WuXhHTpg2djTbfNf0FQAjzFEoluHpnct (1).jpg"
+}
+
+init()
+</script>
+</html>

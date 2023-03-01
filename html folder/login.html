@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz landing page</title>
+    <link rel="stylesheet" href="../style folder/landingpage.css">
+    <script>
+        let token = localStorage.getItem('token')
+    if (token){
+    window.location.replace('../html folder/dashboard.html')
+    }
+    </script>
+</head>
+<body>
+   <header>
+        <a href="../index.html" class="special-link">
+            <div class="logo">
+                <img src="../img/qq.png" alt="">
+                <div class="logotext">
+                    <div class="container">
+                        <p class="brainstorm">brainstorm</p>
+                        <p class="exist"> Since 1965 </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="option">
+            <a href="../html folder/createAccount.html"><li>create account</li></a>
+            <a href="../html folder/login.html"><li>login</li></a>
+        </div>
+   </header>
+
+    <main>
+        <form class="login-form">
+            <div class="username-area">
+                <label for="email">EMAIL</label>
+                <input type="email" class="email" id="email" name="email">
+            </div>
+            <div class="password">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" class="password" name="password">
+            </div>
+            <div class="submit">
+                <button class="submit-btn">LOGIN</button>
+            </div>
+            <div class="sign-up">
+                <p>click here to sign-up if you dont have an account</p><span><a href="#" id="signs-up"><sup >SIGN UP</sup></a></span>
+            </div>
+        </form>
+    </main>
+   
+
+
+    
+    
+    
+    
+</body>
+<script src="../script/utility.js"></script>
+<script src="../script/login.js"></script>
+</html>

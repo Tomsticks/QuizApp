@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style folder/test.css">
+    <title>Document</title>
+    <script>
+             let token = localStorage.getItem('token')
+    if (token === null){
+    window.location.replace('../index.html')
+    }
+    </script>
+</head>
+<body>
+
+    <div class="left">
+        <div class="user-info">
+            <div class="user-details">
+                <img class="img-dashboard" src="../img/1000_F_517798849_WuXhHTpg2djTbfNf0FQAjzFEoluHpnct (1).jpg" alt="">
+               <div>
+                <p class="top">OLOWE PETER TEMILOLUWA</p>
+                <p class="bottom">Dashboard</p>
+               </div>
+            </div>
+            <p class="parameters profile">profile</p>
+            <p class="parameters test">Take a Test</p>
+            <!-- <p class="parameters performance">performance</p>
+            <p class="parameters history">history</p> -->
+            <p class="parameters logout" id="logout">logout</p>
+        </div>
+    </div>
+
+    <div class="right">
+
+
+
+
+        <div class="listofinstruction">
+
+            <h3 class="instruction">instruction</h3>
+
+            <li>there are five(5) subject below, you are to click the subject you want to answer</li>
+            <li>you have thirty (30) minutes to answer all question</li>
+            <li>you not allowed to skip a question</li>
+            <li>you not allowed to go back to your previous question</li>
+            <li>immediately you click the subject button the test start immediately</li>
+            <li>using of calculator is allowed in case of calculating subject</li>
+        </div>
+
+    <div class="bottons">
+        <button class="math">math</button>
+    <button class="sport">sport</button>
+    <button class="english">english</button>
+    <button class="biology">biology</button>
+    <button class="chemistry">chemistry</button>
+    </div>
+    </div>
+</body>
+ <script src="../script/test.js"></script>
+</html>
+
+
+
+
